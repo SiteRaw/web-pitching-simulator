@@ -1,11 +1,11 @@
 # web-pitching-simulator
 A web baseball pitching simulator game using Javascript and HTML.
 
-##About the Project
+## About the Project
 
 A baseball pitching simulator created by SiteRaw Projects https://www.siteraw.com
 
-##Rules
+### Rules
 
 - bottom of the 9th inning
 - you need to strike out 3 batters
@@ -21,13 +21,13 @@ A baseball pitching simulator created by SiteRaw Projects https://www.siteraw.co
   - easier to hit foul balls (as he is less likely to take a "looking" strike)
 - a visual aid can be turned on by setting 'const drawZones = 1;' in the Javascript file
 
-##Languages
+### Languages
 
 - HTML
 - CSS
 - Javascript
 
-##Future updates?
+### Future updates?
 
 - implement hits (singles, doubles, triples) and balls in play (popout, groundout, flyout)
 - adjust the score before a game

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitching Simulation</title>
+    <style>
+        canvas {
+            border: 1px solid #def;
+        }
+        .game-info {
+            margin-top: 10px;
+        }
+        button {
+            margin: 5px;
+            padding: 5px 10px;
+        } #boxscore{display: none;} .tb td {text-align:center; padding: 10px;}
+    </style>
+  <script type="text/javascript" src="baseball.js"></script>
+</head>
+<body>
+    <canvas id="strikeZone" width="60" height="75"></canvas>
+    <div>
+        <button id="fastball">Fastball</button>
+        <button id="cutter">Cutter</button>
+        <button id="sweeper">Sweeper</button>
+        <button id="curveball">Curveball</button>
+        <button id="splitter">Splitter</button>
+    </div>
+    <div class="game-info">
+	<div id="boxscore"><table class="tb"><tr><th>Name</th><th>IP</th><th>H</th><th>R</th><th>ER</th><th>BB</th><th>K</th><th>ERA</th></tr><tr><td>SiteRaw (<span id="totalsave">S</span>)</td><td>1.0</td><td id="totalhits">0</td><td id="totalr">0</td><td id="totaler">0</td><td id="totalbb">0</td><td>3</td><td><span id="totalera">0</span>.00</td></tr></table></div>
+	<p><strong>Last Pitch: </strong><span style="color:blue" id="last"></span></p>
+        <p><strong>Count: </strong><span style="color:darkred" id="cstrike">0</span> Strikes | <span style="color:green" id="cball">0</span> Balls</p>
+        <p><strong>Outs: </strong><span id="outs">0</span>/3</p>
+	<p><strong>Runners: </strong><span id="onbase"></span></p>
+        <p><strong>Score: </strong>Pitcher <span id="pscore">9</span> - <span id="oscore">7</span> Opponent</p>
+        <p><strong>Current Batter: </strong><span id="batter">Batter 1 (RF)</span></p>
+        <p><strong>Game Status: </strong><span id="status">In Progress</span></p>
+	<p><strong>Rules: </strong>Strike out 3 batters to win the game. Batters become stronger and more reckless at two strikes.</p>
+        <p><strong>Target: </strong>(<span id="tv">0</span>, <span id="th">0</span>)</p>
+        <p><strong>Result: </strong>(<span id="rv">0</span>, <span id="rh">0</span>)</p>
+    </div>
+</body>
+</html>

@@ -1,4 +1,4 @@
-# web-pitching-simulator
+# Baseball Pitching Simulator
 A web baseball pitching simulator game using Javascript and HTML.
 
 ## About the Project
